@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>1 Shangri La Blvd | Investor Opportunity</title>
+<style>
+  :root {
+    --blue-deep: #0a2540;
+    --blue-mid: #1e4e8c;
+    --blue-bright: #2a72d6;
+    --blue-soft: #eaf2fb;
+    --white: #ffffff;
+    --ink: #1a1a1a;
+    --muted: #5a6b80;
+    --line: #d7e2f0;
+    --accent: #c9a227;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: var(--ink);
+    background: var(--white);
+    line-height: 1.6;
+    font-size: 16px;
+  }
+
+  .container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* Header */
+  header.site {
+    background: var(--white);
+    border-bottom: 1px solid var(--line);
+    padding: 16px 0;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+  }
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .logos {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+  }
+  .logo-slot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo-slot.primary {
+    height: 130px;
+  }
+  .logo-slot.primary img {
+    max-height: 130px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+  }
+  .logo-slot.secondary {
+    height: 44px;
+  }
+  .logo-slot.secondary img {
+    max-height: 44px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+  }
+  .logo-divider {
+    width: 1px;
+    height: 60px;
+    background: var(--line);
+  }
+  .copresented {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  .copresented-label {
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: var(--muted);
+    font-weight: 600;
+  }
+  .brand-text {
+    text-align: left;
+    line-height: 1.1;
+  }
+  .brand-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--blue-deep);
+    letter-spacing: -0.3px;
+  }
+  .brand-tag {
+    font-size: 10px;
+    font-weight: 500;
+    color: var(--blue-mid);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: 4px;
+  }
+  .header-cta {
+    background: var(--blue-mid);
+    color: var(--white);
+    padding: 12px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    transition: background 0.2s, transform 0.15s;
+  }
+  .header-cta:hover {
+    background: var(--blue-deep);
+    transform: translateY(-1px);
+  }
+
+  /* Hero */
+  .hero {
+    background: linear-gradient(135deg, var(--blue-deep) 0%, var(--blue-mid) 100%);
+    color: var(--white);
+    padding: 70px 0 60px;
+    text-align: center;
+  }
+  .pill {
+    display: inline-block;
+    background: rgba(255,255,255,0.15);
+    color: var(--white);
+    padding: 6px 16px;
+    border-radius: 999px;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    margin-bottom: 18px;
+  }
+  .hero h1 {
+    font-size: 44px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+    line-height: 1.15;
+  }
+  .hero .address {
+    font-size: 20px;
+    color: var(--blue-soft);
+    margin-bottom: 30px;
+  }
+  .hero-photo {
+    max-width: 880px;
+    margin: 28px auto 36px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+    aspect-ratio: 16 / 9;
+    background: rgba(0,0,0,0.2);
+  }
+  .hero-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .hero-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    max-width: 760px;
+    margin: 0 auto 36px;
+  }
+  .stat {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 8px;
+    padding: 18px 12px;
+  }
+  .stat .num {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .stat .label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--blue-soft);
+  }
+  .hero-cta {
+    display: inline-block;
+    background: var(--white);
+    color: var(--blue-deep);
+    padding: 16px 36px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 6px;
+    transition: transform 0.15s;
+  }
+  .hero-cta:hover { transform: translateY(-1px); }
+  .hero-cta.outline {
+    background: transparent;
+    color: var(--white);
+    border: 2px solid var(--white);
+  }
+
+  /* Section base */
+  section {
+    padding: 70px 0;
+  }
+  section.alt {
+    background: var(--blue-soft);
+  }
+  .section-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--blue-deep);
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  .section-sub {
+    text-align: center;
+    color: var(--muted);
+    margin-bottom: 44px;
+    font-size: 16px;
+  }
+
+  /* Numbers / Deal Snapshot */
+  .deal-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .deal-card {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 28px 24px;
+    text-align: center;
+  }
+  .deal-card.feature {
+    background: var(--blue-deep);
+    color: var(--white);
+    border-color: var(--blue-deep);
+  }
+  .deal-card .small-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--muted);
+    margin-bottom: 10px;
+  }
+  .deal-card.feature .small-label { color: var(--blue-soft); }
+  .deal-card .big-num {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--blue-deep);
+    margin-bottom: 6px;
+  }
+  .deal-card.feature .big-num { color: var(--white); }
+  .deal-card .placeholder {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--accent);
+    padding: 10px 14px;
+    background: rgba(201, 162, 39, 0.08);
+    border: 1.5px dashed var(--accent);
+    border-radius: 6px;
+    display: inline-block;
+  }
+  .deal-card .note {
+    font-size: 13px;
+    color: var(--muted);
+    margin-top: 8px;
+  }
+
+  /* Snapshot */
+  .snapshot {
+    max-width: 680px;
+    margin: 0 auto;
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 18px rgba(10, 37, 64, 0.06);
+  }
+  .snap-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 28px;
+    border-bottom: 1px solid var(--line);
+    font-size: 17px;
+  }
+  .snap-row:last-child { border-bottom: none; }
+  .snap-label {
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .snap-value {
+    color: var(--blue-deep);
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .snap-value.placeholder-inline {
+    color: var(--accent);
+    font-family: "Courier New", monospace;
+    letter-spacing: 1px;
+  }
+  .snap-row.highlight {
+    background: var(--blue-deep);
+  }
+  .snap-row.highlight .snap-label {
+    color: var(--blue-soft);
+  }
+  .snap-row.highlight .snap-value {
+    color: var(--white);
+  }
+
+  /* Property details */
+  .details-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .detail {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 22px 12px;
+    text-align: center;
+  }
+  .detail .icon {
+    font-size: 22px;
+    margin-bottom: 8px;
+    color: var(--blue-bright);
+  }
+  .detail .val {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--blue-deep);
+    margin-bottom: 4px;
+  }
+  .detail .lbl {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: var(--muted);
+    letter-spacing: 1px;
+  }
+
+  /* Gallery */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+  .photo-slot {
+    aspect-ratio: 4 / 3;
+    background: var(--blue-soft);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--muted);
+    font-size: 13px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .photo-slot:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 24px rgba(10, 37, 64, 0.15);
+  }
+  .photo-slot img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* Lightbox */
+  .lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.92);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    cursor: zoom-out;
+  }
+  .lightbox.open {
+    display: flex;
+  }
+  .lightbox-img {
+    max-width: 95%;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 4px;
+    cursor: default;
+  }
+  .lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 28px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 42px;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+    width: 48px;
+    height: 48px;
+    z-index: 10;
+  }
+  .lightbox-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.12);
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+  }
+  .lightbox-nav:hover {
+    background: rgba(255,255,255,0.25);
+  }
+  .lightbox-nav.prev { left: 20px; }
+  .lightbox-nav.next { right: 20px; }
+  .lightbox-counter {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(255,255,255,0.1);
+    padding: 8px 18px;
+    border-radius: 999px;
+  }
+  @media (max-width: 768px) {
+    .lightbox { padding: 12px; }
+    .lightbox-nav { width: 44px; height: 44px; font-size: 18px; }
+    .lightbox-nav.prev { left: 8px; }
+    .lightbox-nav.next { right: 8px; }
+  }
+
+  /* Showing */
+  .showing-card {
+    background: var(--blue-deep);
+    color: var(--white);
+    border-radius: 12px;
+    padding: 50px 40px;
+    text-align: center;
+    max-width: 820px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
+  .showing-card::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 6px;
+    background: linear-gradient(90deg, var(--accent), #e6c050, var(--accent));
+  }
+  .showing-card .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 13px;
+    color: var(--accent);
+    margin-bottom: 14px;
+    font-weight: 700;
+  }
+  .showing-card h3 {
+    font-size: 30px;
+    margin-bottom: 24px;
+  }
+  .datetime-block {
+    background: rgba(255,255,255,0.06);
+    border: 2px solid var(--accent);
+    border-radius: 10px;
+    padding: 28px 24px;
+    margin: 0 auto 28px;
+    max-width: 540px;
+  }
+  .datetime-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+  .datetime-date {
+    text-align: center;
+  }
+  .datetime-day {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: var(--accent);
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .datetime-fulldate {
+    font-size: 38px;
+    font-weight: 800;
+    color: var(--white);
+    line-height: 1;
+    letter-spacing: -0.5px;
+  }
+  .datetime-separator {
+    width: 1px;
+    height: 50px;
+    background: rgba(255,255,255,0.25);
+  }
+  .datetime-time {
+    text-align: center;
+  }
+  .datetime-time-label {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: var(--accent);
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .datetime-time-value {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--white);
+    line-height: 1;
+    letter-spacing: -0.5px;
+  }
+  .showing-card .where {
+    font-size: 17px;
+    color: var(--blue-soft);
+    margin-bottom: 32px;
+    font-weight: 500;
+  }
+  .showing-card .where strong {
+    color: var(--white);
+    font-weight: 700;
+  }
+  .showing-card .rsvp-btn {
+    display: inline-block;
+    background: var(--white);
+    color: var(--blue-deep);
+    padding: 16px 40px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .rsvp-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-bottom: 8px;
+  }
+  .rsvp-option {
+    background: var(--white);
+    color: var(--blue-deep);
+    padding: 22px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.15s, box-shadow 0.15s;
+    display: block;
+  }
+  .rsvp-option:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+  }
+  .rsvp-icon {
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+  .rsvp-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--blue-mid);
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .rsvp-value {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--blue-deep);
+    word-break: break-word;
+  }
+  .rsvp-instructions {
+    margin-top: 22px;
+    padding-top: 22px;
+    border-top: 1px solid rgba(255,255,255,0.18);
+    color: var(--blue-soft);
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  .rsvp-instructions strong {
+    color: var(--white);
+    font-weight: 600;
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+  .rsvp-instructions .fields {
+    color: var(--white);
+    font-weight: 600;
+  }
+
+  /* Deal Notes */
+  .notes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .note-item {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--blue-mid);
+    border-radius: 6px;
+    padding: 20px 22px;
+  }
+  .note-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--muted);
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .note-value {
+    font-size: 16px;
+    color: var(--blue-deep);
+    font-weight: 600;
+    line-height: 1.4;
+  }
+  @media (max-width: 768px) {
+    .notes-grid { grid-template-columns: 1fr; gap: 10px; }
+    .note-item { padding: 16px 18px; }
+  }
+
+  /* Contact */
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    max-width: 880px;
+    margin: 0 auto;
+  }
+  .contact-card {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 32px 28px;
+    text-align: center;
+  }
+  .contact-card .name {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--blue-deep);
+    margin-bottom: 18px;
+  }
+  .contact-card a {
+    display: block;
+    color: var(--blue-mid);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 0;
+  }
+  .contact-card a:hover { color: var(--blue-bright); }
+
+  /* Footer */
+  footer {
+    background: var(--blue-deep);
+    color: var(--blue-soft);
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 14px;
+  }
+  footer .disclaimer {
+    max-width: 720px;
+    margin: 14px auto 0;
+    font-size: 12px;
+    opacity: 0.75;
+    line-height: 1.7;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero h1 { font-size: 32px; }
+    .hero-stats { grid-template-columns: repeat(2, 1fr); }
+    .deal-grid { grid-template-columns: 1fr; }
+    .details-grid { grid-template-columns: repeat(2, 1fr); }
+    .gallery { grid-template-columns: repeat(2, 1fr); }
+    .contact-grid { grid-template-columns: 1fr; }
+    .section-title { font-size: 24px; }
+    .showing-card { padding: 36px 22px; }
+    .showing-card h3 { font-size: 22px; margin-bottom: 18px; }
+    .datetime-block { padding: 22px 16px; }
+    .datetime-row { flex-direction: column; gap: 16px; }
+    .datetime-fulldate { font-size: 32px; }
+    .datetime-time-value { font-size: 28px; }
+    .datetime-separator { width: 60px; height: 1px; }
+    .datetime-day, .datetime-time-label { font-size: 11px; letter-spacing: 3px; }
+    .snap-row { padding: 16px 18px; font-size: 15px; }
+    .snap-value { font-size: 17px; }
+    .snap-label { font-size: 11px; }
+    .rsvp-options { grid-template-columns: 1fr; gap: 10px; }
+    .rsvp-option { padding: 16px 14px; }
+    .logos { gap: 16px; }
+    .logo-slot.primary { height: 95px; }
+    .logo-slot.primary img { max-height: 95px; }
+    .logo-slot.secondary { height: 34px; }
+    .logo-slot.secondary img { max-height: 34px; }
+    .logo-divider { height: 44px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="container header-inner">
+    <div class="logos">
+      <div class="logo-slot primary">
+        <img src="logo1.png" alt="Visionary Investment Partners" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=&quot;brand-text&quot;><div class=&quot;brand-name&quot;>VIP</div><div class=&quot;brand-tag&quot;>Visionary Investment Partners</div></div>';" />
+      </div>
+      <div class="logo-divider"></div>
+      <div class="logo-slot secondary">
+        <img src="logo2.png" alt="Moor Realty Group" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=&quot;brand-text&quot;><div class=&quot;brand-name&quot;>MOOR</div><div class=&quot;brand-tag&quot;>Realty Group</div></div>';" />
+      </div>
+    </div>
+    <a href="#rsvp" class="header-cta">RSVP for Group Showing</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <span class="pill">OFF MARKET OPPORTUNITY</span>
+    <h1>1 Shangri La Blvd</h1>
+    <p class="address">Wareham, MA</p>
+
+    <div class="hero-photo">
+      <img src="photos/hero.png" alt="1 Shangri La Blvd, Wareham MA" />
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="num">$330K</div>
+        <div class="label">Asking</div>
+      </div>
+      <div class="stat">
+        <div class="num">2,016</div>
+        <div class="label">Sq Ft</div>
+      </div>
+      <div class="stat">
+        <div class="num">3 / 2</div>
+        <div class="label">Beds / Baths</div>
+      </div>
+      <div class="stat">
+        <div class="num">0.31</div>
+        <div class="label">Acres</div>
+      </div>
+    </div>
+
+    <a href="#rsvp" class="hero-cta">RSVP for Group Showing</a>
+    <a href="#numbers" class="hero-cta outline">View the Numbers</a>
+  </div>
+</section>
+
+<section id="numbers">
+  <div class="container">
+    <h2 class="section-title">Deal Snapshot</h2>
+
+    <div class="snapshot">
+      <div class="snap-row">
+        <span class="snap-label">Asking</span>
+        <span class="snap-value">$330,000</span>
+      </div>
+      <div class="snap-row">
+        <span class="snap-label">ARV</span>
+        <span class="snap-value placeholder-inline">$ ______</span>
+      </div>
+      <div class="snap-row">
+        <span class="snap-label">Repair Estimate</span>
+        <span class="snap-value placeholder-inline">$ ______</span>
+      </div>
+      <div class="snap-row">
+        <span class="snap-label">Close</span>
+        <span class="snap-value">6/30</span>
+      </div>
+      <div class="snap-row highlight">
+        <span class="snap-label">Group Showing</span>
+        <span class="snap-value">Friday 5/29 @ 12 noon</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="container">
+    <h2 class="section-title">Property Details</h2>
+
+    <div class="details-grid">
+      <div class="detail">
+        <div class="icon">🛏️</div>
+        <div class="val">3</div>
+        <div class="lbl">Bedrooms</div>
+      </div>
+      <div class="detail">
+        <div class="icon">🛁</div>
+        <div class="val">2</div>
+        <div class="lbl">Bathrooms</div>
+      </div>
+      <div class="detail">
+        <div class="icon">📐</div>
+        <div class="val">2,016</div>
+        <div class="lbl">Sq Ft</div>
+      </div>
+      <div class="detail">
+        <div class="icon">🌳</div>
+        <div class="val">0.31</div>
+        <div class="lbl">Acres</div>
+      </div>
+      <div class="detail">
+        <div class="icon">🏗️</div>
+        <div class="val">1977</div>
+        <div class="lbl">Year Built</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="container">
+    <h2 class="section-title">Property Photos</h2>
+
+    <div class="gallery">
+      <div class="photo-slot" onclick="openLightbox(this)"><img src="photos/photo01.jpg" alt="Property photo 1" loading="lazy" /></div>
+      <div class="photo-slot" onclick="openLightbox(this)"><img src="photos/photo02.jpg" alt="Property photo 2" loading="lazy" /></div>
+      <div class="photo-slot" onclick="openLightbox(this)"><img src="photos/photo03.jpg" alt="Property photo 3" loading="lazy" /></div>
+      <div class="photo-slot" onclick="openLightbox(this)"><img src="photos/photo04.jpg" alt="Property photo 4" loading="lazy" /></div>
+      <div class="photo-slot" onclick="openLightbox(this)"><img src="photos/photo05.jpg" alt="Property photo 5" loading="lazy" /></div>
+      <div class="photo-slot" onclick="openLightbox(this)"><img src="photos/photo06.jpg" alt="Property photo 6" loading="lazy" /></div>
+      <div class="photo-slot" onclick="openLightbox(this)"><img src="photos/photo07.jpg" alt="Property photo 7" loading="lazy" /></div>
+      <div class="photo-slot" onclick="openLightbox(this)"><img src="photos/photo08.jpg" alt="Property photo 8" loading="lazy" /></div>
+      <div class="photo-slot" onclick="openLightbox(this)"><img src="photos/photo09.jpg" alt="Property photo 9" loading="lazy" /></div>
+      <div class="photo-slot" onclick="openLightbox(this)"><img src="photos/photo10.jpg" alt="Property photo 10" loading="lazy" /></div>
+      <div class="photo-slot" onclick="openLightbox(this)"><img src="photos/photo11.jpg" alt="Property photo 11" loading="lazy" /></div>
+      <div class="photo-slot" onclick="openLightbox(this)"><img src="photos/photo12.jpg" alt="Property photo 12" loading="lazy" /></div>
+      <div class="photo-slot" onclick="openLightbox(this)"><img src="photos/photo13.jpg" alt="Property photo 13" loading="lazy" /></div>
+      <div class="photo-slot" onclick="openLightbox(this)"><img src="photos/photo14.jpg" alt="Property photo 14" loading="lazy" /></div>
+      <div class="photo-slot" onclick="openLightbox(this)"><img src="photos/photo15.jpg" alt="Property photo 15" loading="lazy" /></div>
+      <div class="photo-slot" onclick="openLightbox(this)"><img src="photos/photo16.jpg" alt="Property photo 16" loading="lazy" /></div>
+      <div class="photo-slot" onclick="openLightbox(this)"><img src="photos/photo17.jpg" alt="Property photo 17" loading="lazy" /></div>
+      <div class="photo-slot" onclick="openLightbox(this)"><img src="photos/photo18.jpg" alt="Property photo 18" loading="lazy" /></div>
+      <div class="photo-slot" onclick="openLightbox(this)"><img src="photos/photo19.jpg" alt="Property photo 19" loading="lazy" /></div>
+      <div class="photo-slot" onclick="openLightbox(this)"><img src="photos/photo20.jpg" alt="Property photo 20" loading="lazy" /></div>
+      <div class="photo-slot" onclick="openLightbox(this)"><img src="photos/photo21.jpg" alt="Property photo 21" loading="lazy" /></div>
+      <div class="photo-slot" onclick="openLightbox(this)"><img src="photos/photo22.jpg" alt="Property photo 22" loading="lazy" /></div>
+      <div class="photo-slot" onclick="openLightbox(this)"><img src="photos/photo23.jpg" alt="Property photo 23" loading="lazy" /></div>
+      <div class="photo-slot" onclick="openLightbox(this)"><img src="photos/photo24.jpg" alt="Property photo 24" loading="lazy" /></div>
+      <div class="photo-slot" onclick="openLightbox(this)"><img src="photos/photo25.jpg" alt="Property photo 25" loading="lazy" /></div>
+      <div class="photo-slot" onclick="openLightbox(this)"><img src="photos/photo26.jpg" alt="Property photo 26" loading="lazy" /></div>
+      <div class="photo-slot" onclick="openLightbox(this)"><img src="photos/photo27.jpg" alt="Property photo 27" loading="lazy" /></div>
+      <div class="photo-slot" onclick="openLightbox(this)"><img src="photos/photo28.jpg" alt="Property photo 28" loading="lazy" /></div>
+      <div class="photo-slot" onclick="openLightbox(this)"><img src="photos/photo29.jpg" alt="Property photo 29" loading="lazy" /></div>
+      <div class="photo-slot" onclick="openLightbox(this)"><img src="photos/photo30.jpg" alt="Property photo 30" loading="lazy" /></div>
+      <div class="photo-slot" onclick="openLightbox(this)"><img src="photos/photo31.jpg" alt="Property photo 31" loading="lazy" /></div>
+      <div class="photo-slot" onclick="openLightbox(this)"><img src="photos/photo32.jpg" alt="Property photo 32" loading="lazy" /></div>
+      <div class="photo-slot" onclick="openLightbox(this)"><img src="photos/photo33.jpg" alt="Property photo 33" loading="lazy" /></div>
+      <div class="photo-slot" onclick="openLightbox(this)"><img src="photos/photo34.jpg" alt="Property photo 34" loading="lazy" /></div>
+      <div class="photo-slot" onclick="openLightbox(this)"><img src="photos/photo35.jpg" alt="Property photo 35" loading="lazy" /></div>
+      <div class="photo-slot" onclick="openLightbox(this)"><img src="photos/photo36.jpg" alt="Property photo 36" loading="lazy" /></div>
+      <div class="photo-slot" onclick="openLightbox(this)"><img src="photos/photo37.jpg" alt="Property photo 37" loading="lazy" /></div>
+      <div class="photo-slot" onclick="openLightbox(this)"><img src="photos/photo38.jpg" alt="Property photo 38" loading="lazy" /></div>
+      <div class="photo-slot" onclick="openLightbox(this)"><img src="photos/photo39.jpg" alt="Property photo 39" loading="lazy" /></div>
+      <div class="photo-slot" onclick="openLightbox(this)"><img src="photos/photo40.jpg" alt="Property photo 40" loading="lazy" /></div>
+      <div class="photo-slot" onclick="openLightbox(this)"><img src="photos/photo41.jpg" alt="Property photo 41" loading="lazy" /></div>
+      <div class="photo-slot" onclick="openLightbox(this)"><img src="photos/photo42.jpg" alt="Property photo 42" loading="lazy" /></div>
+      <div class="photo-slot" onclick="openLightbox(this)"><img src="photos/photo43.jpg" alt="Property photo 43" loading="lazy" /></div>
+      <div class="photo-slot" onclick="openLightbox(this)"><img src="photos/photo44.jpg" alt="Property photo 44" loading="lazy" /></div>
+      <div class="photo-slot" onclick="openLightbox(this)"><img src="photos/photo45.jpg" alt="Property photo 45" loading="lazy" /></div>
+      <div class="photo-slot" onclick="openLightbox(this)"><img src="photos/photo46.jpg" alt="Property photo 46" loading="lazy" /></div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
+      <button class="lightbox-close" onclick="closeLightbox(event)" aria-label="Close">&times;</button>
+      <button class="lightbox-nav prev" onclick="navLightbox(event, -1)" aria-label="Previous">&#10094;</button>
+      <button class="lightbox-nav next" onclick="navLightbox(event, 1)" aria-label="Next">&#10095;</button>
+      <div class="lightbox-counter"></div>
+      <img class="lightbox-img" src="" alt="" />
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="rsvp">
+  <div class="container">
+    <div class="showing-card">
+      <div class="eyebrow">Group Showing</div>
+
+      <div class="datetime-block">
+        <div class="datetime-row">
+          <div class="datetime-date">
+            <div class="datetime-day">Friday</div>
+            <div class="datetime-fulldate">May 29</div>
+          </div>
+          <div class="datetime-separator"></div>
+          <div class="datetime-time">
+            <div class="datetime-time-label">Time</div>
+            <div class="datetime-time-value">12 Noon</div>
+          </div>
+        </div>
+      </div>
+
+      <p class="where"><strong>1 Shangri La Blvd</strong>, Wareham, MA</p>
+      <div class="rsvp-options">
+        <a href="mailto:krista@moorrealty.com?subject=RSVP%20-%201%20Shangri%20La%20Blvd%20Group%20Showing&body=Hi%20Krista%2C%0A%0AI%27d%20like%20to%20RSVP%20for%20the%20group%20showing%20at%201%20Shangri%20La%20Blvd%2C%20Wareham%20MA%20on%20Friday%205%2F29%20at%2012%20noon.%0A%0AName%3A%0APhone%3A%0AEmail%3A%0A%0AThanks!" class="rsvp-option">
+          <div class="rsvp-icon">✉️</div>
+          <div class="rsvp-label">Email</div>
+          <div class="rsvp-value">krista@moorrealty.com</div>
+        </a>
+        <a href="sms:6177943919" class="rsvp-option">
+          <div class="rsvp-icon">💬</div>
+          <div class="rsvp-label">Text</div>
+          <div class="rsvp-value">(617) 794-3919</div>
+        </a>
+        <a href="tel:6177943919" class="rsvp-option">
+          <div class="rsvp-icon">📞</div>
+          <div class="rsvp-label">Call</div>
+          <div class="rsvp-value">(617) 794-3919</div>
+        </a>
+      </div>
+
+      <div class="rsvp-instructions">
+        <strong>When you reach out, please include:</strong>
+        <span class="fields">Your Name &nbsp;•&nbsp; Phone &nbsp;•&nbsp; Email</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="section-title">Deal Notes</h2>
+    <div class="notes-grid">
+      <div class="note-item">
+        <div class="note-label">Deal Type</div>
+        <div class="note-value">Off market assignment of contract</div>
+      </div>
+      <div class="note-item">
+        <div class="note-label">Sold As-Is</div>
+        <div class="note-value">No repairs, no concessions</div>
+      </div>
+      <div class="note-item">
+        <div class="note-label">Buyer</div>
+        <div class="note-value">Cash or hard money, proof of funds required</div>
+      </div>
+      <div class="note-item">
+        <div class="note-label">Access</div>
+        <div class="note-value">Group showing only, Friday 5/29 at 12 noon</div>
+      </div>
+      <div class="note-item">
+        <div class="note-label">Close</div>
+        <div class="note-value">On or before 6/30</div>
+      </div>
+      <div class="note-item">
+        <div class="note-label">Earnest Money</div>
+        <div class="note-value">Non-refundable at contract signing</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="contact">
+  <div class="container">
+    <h2 class="section-title">Get in Touch</h2>
+
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="name">Krista Recker</div>
+        <a href="tel:6177943919">(617) 794-3919</a>
+        <a href="mailto:krista@moorrealty.com">krista@moorrealty.com</a>
+      </div>
+      <div class="contact-card">
+        <div class="name">Mike Ferraro</div>
+        <a href="tel:5083200646">(508) 320-0646</a>
+        <a href="mailto:mikeferraro@moorrealty.com">mikeferraro@moorrealty.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p class="disclaimer">
+    This property is being offered as an assignment of contract. Numbers, square footage, and lot size are believed accurate but not warranted. Buyer to perform full due diligence. Photos are for informational purposes. Not a solicitation to buyers or sellers currently under contract with another agent.
+  </p>
+</footer>
+
+<script>
+  (function() {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = lightbox.querySelector('.lightbox-img');
+    const counter = lightbox.querySelector('.lightbox-counter');
+    const photos = Array.from(document.querySelectorAll('.gallery .photo-slot img'));
+    let currentIndex = 0;
+
+    window.openLightbox = function(slot) {
+      const img = slot.querySelector('img');
+      currentIndex = photos.indexOf(img);
+      showPhoto(currentIndex);
+      lightbox.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    };
+
+    window.closeLightbox = function(e) {
+      if (e && e.target !== lightbox && !e.target.classList.contains('lightbox-close')) return;
+      lightbox.classList.remove('open');
+      document.body.style.overflow = '';
+    };
+
+    window.navLightbox = function(e, dir) {
+      e.stopPropagation();
+      currentIndex = (currentIndex + dir + photos.length) % photos.length;
+      showPhoto(currentIndex);
+    };
+
+    function showPhoto(i) {
+      lightboxImg.src = photos[i].src;
+      lightboxImg.alt = photos[i].alt;
+      counter.textContent = (i + 1) + ' / ' + photos.length;
+    }
+
+    // Stop image clicks from closing
+    lightboxImg.addEventListener('click', function(e) { e.stopPropagation(); });
+
+    // Keyboard navigation
+    document.addEventListener('keydown', function(e) {
+      if (!lightbox.classList.contains('open')) return;
+      if (e.key === 'Escape') closeLightbox({target: lightbox});
+      if (e.key === 'ArrowLeft') navLightbox(e, -1);
+      if (e.key === 'ArrowRight') navLightbox(e, 1);
+    });
+  })();
+</script>
+
+</body>
+</html>
